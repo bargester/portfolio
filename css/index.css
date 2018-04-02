@@ -307,16 +307,42 @@ input[type="submit"] {
 @font-face {
   font-family: 'GreatVibes';
   src: url("../fonts/GreatVibes-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'BreeSerif';
+  src: url("../fonts/BreeSerif-Regular.ttf") format("truetype"); }
+/*FLEX*/
 .container {
   max-width: 950px;
   width: 100%;
   padding: 0 45px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #262626; }
 
 body {
-  background: url("../img/body/background.jpg");
+  background: url("../img/body/background.jpg") fixed;
   color: #6a6969;
   height: 500vh; }
+
+hr {
+  height: 10px;
+  background: url("../img/body/background.jpg");
+  border: none;
+  margin: 25px 0; }
+
+h2 {
+  font-size: 60px;
+  font-family: "BreeSerif", sans-serif; }
+
+h3 {
+  font-size: 20px;
+  font-family: "BreeSerif", sans-serif;
+  font-weight: normal;
+  margin-bottom: 15px; }
+
+p {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif; }
 
 .header-s {
   margin-top: 5px;
@@ -328,8 +354,10 @@ body {
   .header-s__wrap {
     background-color: #222222;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+    flex-wrap: nowrap; }
     .header-s__wrap h1 {
       width: 300px;
       height: 70px;
@@ -353,6 +381,50 @@ body {
       margin-left: 35px; }
   .header-s ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    max-width: 350px;
+    align-items: center;
+    flex-wrap: nowrap;
+    max-width: 300px;
     width: 100%; }
+    .header-s ul li {
+      font-family: "BreeSerif", sans-serif;
+      font-size: 16px; }
+
+.about-s {
+  height: 100vh; }
+  .about-s__wrap {
+    padding-top: 150px; }
+    .about-s__wrap .about-s__title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: nowrap; }
+      .about-s__wrap .about-s__title ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: nowrap;
+        max-width: 200px;
+        width: 100%; }
+  .about-s .about-s__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: nowrap; }
+    .about-s .about-s__main img {
+      height: 300px;
+      width: 250px;
+      filter: grayscale(0.5); }
+    .about-s .about-s__main .about-s__main-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      flex-wrap: nowrap;
+      padding: 0 20px;
+      max-width: 710px;
+      width: 100%; }

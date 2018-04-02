@@ -1,5 +1,26 @@
 body{
-  background: url("../img/body/background.jpg");
+  background: url("../img/body/background.jpg") fixed;
   color: $main-text-color;
   height: 500vh;
+}
+hr{
+  height: 10px;
+  background: url("../img/body/background.jpg");
+  border: none;
+  margin: 25px 0;
+}
+h2 {
+  font-size: 60px;
+  font-family: "BreeSerif", sans-serif;
+}
+h3 {
+  font-size: 20px;
+  font-family: "BreeSerif", sans-serif;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+p{
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Open Sans", sans-serif;
 }

@@ -1,0 +1,28 @@
+.about-s {
+  height: 100vh;
+  &__wrap {
+    padding-top: 150px;
+    .about-s__title {
+      @include flex(row, space-between, flex-end, nowrap);
+      ul {
+        @include flex(row, space-between, start, nowrap);
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+  }
+  .about-s__main{
+    @include flex(row, start, start, nowrap);
+    img{
+      height: 300px;
+      width: 250px;
+      filter: grayscale(.5);
+      }
+    .about-s__main-title{
+      @include flex(column, center, start, nowrap);
+      padding: 0 20px;
+      max-width: 710px;
+      width: 100%;
+    }
+  }
+}
