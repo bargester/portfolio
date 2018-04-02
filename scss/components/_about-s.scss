@@ -6,7 +6,7 @@
       @include flex(row, space-between, flex-end, nowrap);
       ul {
         @include flex(row, space-between, start, nowrap);
-        max-width: 200px;
+        max-width: 250px;
         width: 100%;
       }
     }

@@ -325,7 +325,7 @@ body {
 
 hr {
   height: 10px;
-  background: url("../img/body/background.jpg");
+  background: url("../img/body/background.jpg") fixed;
   border: none;
   margin: 25px 0; }
 
@@ -345,7 +345,7 @@ p {
   font-family: "Open Sans", sans-serif; }
 
 .header-s {
-  margin-top: 5px;
+  margin-top: 10px;
   position: fixed;
   top: 0;
   left: 0;
@@ -407,7 +407,7 @@ p {
         justify-content: space-between;
         align-items: start;
         flex-wrap: nowrap;
-        max-width: 200px;
+        max-width: 250px;
         width: 100%; }
   .about-s .about-s__main {
     display: flex;
