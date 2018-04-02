@@ -1,0 +1,45 @@
+.header-s {
+  margin-top: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  &__wrap {
+    background-color: $header-background-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      width: 300px;
+      height: 70px;
+      line-height: 70px;
+      display: flex;
+    }
+    .logo {
+      font-family: 'GreatVibes', cursive;
+      font-size: 60px;
+      font-weight: normal;
+      position: relative;
+      display: inline-block;
+      &:after {
+        content: '';
+        position: absolute;
+        height: 50px;
+        width: 1px;
+        background-color: $main-text-color;
+        top: 10px;
+        right: -20px;
+      }
+    }
+    span {
+      margin-left: 35px;
+    }
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+  }
+}
