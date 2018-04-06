@@ -327,7 +327,7 @@ hr {
   height: 10px;
   background: url("../img/body/background.jpg") fixed;
   border: none;
-  margin: 25px 0; }
+  margin: 15px 0; }
 
 h2 {
   font-size: 60px;
@@ -391,40 +391,52 @@ p {
       font-family: "BreeSerif", sans-serif;
       font-size: 16px; }
 
-.about-s {
-  height: 100vh; }
-  .about-s__wrap {
-    padding-top: 150px; }
-    .about-s__wrap .about-s__title {
+.about-s__wrap {
+  padding-top: 150px;
+  padding-bottom: 15px; }
+  .about-s__wrap .about-s__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap; }
+    .about-s__wrap .about-s__title ul {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: flex-end;
-      flex-wrap: nowrap; }
-      .about-s__wrap .about-s__title ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
-        flex-wrap: nowrap;
-        max-width: 250px;
-        width: 100%; }
-  .about-s .about-s__main {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
-    flex-wrap: nowrap; }
-    .about-s .about-s__main img {
-      height: 300px;
-      width: 250px;
-      filter: grayscale(0.5); }
-    .about-s .about-s__main .about-s__main-title {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: start;
       flex-wrap: nowrap;
-      padding: 0 20px;
-      max-width: 710px;
+      max-width: 250px;
       width: 100%; }
+.about-s .about-s__main {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .about-s .about-s__main img {
+    height: 300px;
+    width: 250px;
+    filter: grayscale(0.5); }
+  .about-s .about-s__main .about-s__main-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 0 20px;
+    max-width: 710px;
+    width: 100%; }
+
+.experience-s__wrap {
+  padding-bottom: 15px; }
+
+.title-experience {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap; }
+  .title-experience .title-experience__element {
+    width: 30%; }

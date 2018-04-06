@@ -1,0 +1,10 @@
+.experience-s__wrap{
+  padding-bottom: 15px;
+}
+.title-experience{
+  margin: 50px 0;
+  @include flex(row, space-between, start, wrap);
+  .title-experience__element{
+    width: 30%;
+  }
+}
