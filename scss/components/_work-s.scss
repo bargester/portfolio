@@ -1,0 +1,21 @@
+.works-s__wrap{
+  padding-bottom: 15px;
+  .title-works{
+    @include flex(row, space-between, start, wrap);
+    a{
+      width: 48%;
+      .title-works_element {
+        margin: 10px 0;
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+      }
+      .title-works_element-1 {
+          background-image: url("../img/work/1.png");
+        }
+      .title-works_element-2  {
+          background-image: url("../img/work/2.png");
+        }
+    }
+  }
+}

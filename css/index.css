@@ -430,13 +430,32 @@ p {
 
 .experience-s__wrap {
   padding-bottom: 15px; }
+  .experience-s__wrap .title-experience {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap; }
+    .experience-s__wrap .title-experience .title-experience__element {
+      width: 30%; }
 
-.title-experience {
-  margin: 50px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: start;
-  flex-wrap: wrap; }
-  .title-experience .title-experience__element {
-    width: 30%; }
+.works-s__wrap {
+  padding-bottom: 15px; }
+  .works-s__wrap .title-works {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap; }
+    .works-s__wrap .title-works a {
+      width: 48%; }
+      .works-s__wrap .title-works a .title-works_element {
+        margin: 10px 0;
+        height: 250px;
+        background-position: center;
+        background-size: cover; }
+      .works-s__wrap .title-works a .title-works_element-1 {
+        background-image: url("../img/work/1.png"); }
+      .works-s__wrap .title-works a .title-works_element-2 {
+        background-image: url("../img/work/2.png"); }
