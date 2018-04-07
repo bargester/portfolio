@@ -3,9 +3,9 @@
     padding-top: 150px;
     padding-bottom: 15px;
     .about-s__title {
-      @include flex(row, space-between, flex-end, nowrap);
+      @include flex(row, space-between, flex-end, wrap);
       ul {
-        @include flex(row, space-between, start, nowrap);
+        @include flex(row, space-between, start, wrap);
         max-width: 250px;
         width: 100%;
       }

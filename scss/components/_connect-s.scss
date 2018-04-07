@@ -1,0 +1,16 @@
+.connect-s {
+  margin-bottom: 200px;
+  .connect-s__wrap {
+    .title-connect {
+      @include flex(row, space-between, start, wrap);
+      .form {
+        width: 50%;
+        @include flex(column, space-between, start, wrap);
+      }
+      .title-message {
+        width: 50%;
+        @include flex(column, space-between, start, wrap);
+      }
+    }
+  }
+}

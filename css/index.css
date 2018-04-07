@@ -320,8 +320,7 @@ input[type="submit"] {
 
 body {
   background: url("../img/body/background.jpg") fixed;
-  color: #6a6969;
-  height: 500vh; }
+  color: #6a6969; }
 
 hr {
   height: 10px;
@@ -399,13 +398,13 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    flex-wrap: nowrap; }
+    flex-wrap: wrap; }
     .about-s__wrap .about-s__title ul {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: start;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       max-width: 250px;
       width: 100%; }
 .about-s .about-s__main {
@@ -459,3 +458,26 @@ p {
         background-image: url("../img/work/1.png"); }
       .works-s__wrap .title-works a .title-works_element-2 {
         background-image: url("../img/work/2.png"); }
+
+.connect-s {
+  margin-bottom: 200px; }
+  .connect-s .connect-s__wrap .title-connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap; }
+    .connect-s .connect-s__wrap .title-connect .form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: wrap; }
+    .connect-s .connect-s__wrap .title-connect .title-message {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: wrap; }
