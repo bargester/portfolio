@@ -461,23 +461,56 @@ p {
 
 .connect-s {
   margin-bottom: 200px; }
-  .connect-s .connect-s__wrap .title-connect {
+  .connect-s .title-connect {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap; }
-    .connect-s .connect-s__wrap .title-connect .form {
+    .connect-s .title-connect .form {
+      width: 50%;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      flex-wrap: wrap; }
+      .connect-s .title-connect .form label {
+        margin-bottom: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: nowrap; }
+        .connect-s .title-connect .form label input, .connect-s .title-connect .form label textarea {
+          background-color: #222222;
+          border: 0;
+          width: 300px;
+          height: 30px;
+          padding-left: 15px;
+          color: #6a6969; }
+        .connect-s .title-connect .form label textarea {
+          height: 100px; }
+      .connect-s .title-connect .form input[type='submit'] {
+        background-color: #222222;
+        border: 0;
+        color: #6a6969;
+        align-self: flex-end;
+        height: 30px; }
+    .connect-s .title-connect .title-message {
       width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: start;
       flex-wrap: wrap; }
-    .connect-s .connect-s__wrap .title-connect .title-message {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: start;
-      flex-wrap: wrap; }
+      .connect-s .title-connect .title-message p {
+        margin-bottom: 20px; }
+      .connect-s .title-connect .title-message ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        flex-wrap: wrap;
+        width: 110px; }
