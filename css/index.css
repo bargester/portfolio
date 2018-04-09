@@ -356,7 +356,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; }
+    flex-wrap: wrap; }
     .header-s__wrap h1 {
       width: 300px;
       height: 70px;
@@ -413,10 +413,25 @@ p {
   justify-content: start;
   align-items: center;
   flex-wrap: nowrap; }
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .about-s .about-s__main {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap; } }
+  @media only screen and (max-width: 767px) {
+    .about-s .about-s__main {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      flex-wrap: wrap; } }
   .about-s .about-s__main img {
     height: 300px;
     width: 250px;
-    filter: grayscale(0.5); }
+    filter: grayscale(0.5);
+    margin: 0 auto; }
   .about-s .about-s__main .about-s__main-title {
     display: flex;
     flex-direction: column;
@@ -426,6 +441,12 @@ p {
     padding: 0 20px;
     max-width: 710px;
     width: 100%; }
+    @media only screen and (min-width: 768px) and (max-width: 1199px) {
+      .about-s .about-s__main .about-s__main-title {
+        margin: auto; } }
+    @media only screen and (max-width: 767px) {
+      .about-s .about-s__main .about-s__main-title {
+        margin: auto; } }
 
 .experience-s__wrap {
   padding-bottom: 15px; }
@@ -437,7 +458,9 @@ p {
     align-items: start;
     flex-wrap: wrap; }
     .experience-s__wrap .title-experience .title-experience__element {
-      width: 30%; }
+      max-width: 240px;
+      width: 100%;
+      margin: 15px auto; }
 
 .works-s__wrap {
   padding-bottom: 15px; }
@@ -448,7 +471,15 @@ p {
     align-items: start;
     flex-wrap: wrap; }
     .works-s__wrap .title-works a {
-      width: 48%; }
+      width: 49%; }
+      @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        .works-s__wrap .title-works a {
+          width: 70%;
+          margin: 0 auto; } }
+      @media only screen and (max-width: 767px) {
+        .works-s__wrap .title-works a {
+          width: 100%;
+          margin: 0 auto; } }
       .works-s__wrap .title-works a .title-works_element {
         margin: 10px 0;
         height: 250px;
@@ -459,55 +490,69 @@ p {
       .works-s__wrap .title-works a .title-works_element-2 {
         background-image: url("../img/work/2.png"); }
 
-.connect-s {
-  margin-bottom: 200px; }
-  .connect-s .title-connect {
+.connect-s__wrap {
+  padding-bottom: 100px; }
+  .connect-s__wrap .title-connect {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: start;
     flex-wrap: wrap; }
-    .connect-s .title-connect .form {
-      width: 50%;
+    .connect-s__wrap .title-connect .form {
+      width: 430px;
       padding-right: 50px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: start;
       flex-wrap: wrap; }
-      .connect-s .title-connect .form label {
+      @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        .connect-s__wrap .title-connect .form {
+          width: 270px;
+          padding: 0; } }
+      @media only screen and (max-width: 767px) {
+        .connect-s__wrap .title-connect .form {
+          width: 270px;
+          padding: 0; } }
+      .connect-s__wrap .title-connect .form label {
         margin-bottom: 10px;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: start;
-        flex-wrap: nowrap; }
-        .connect-s .title-connect .form label input, .connect-s .title-connect .form label textarea {
+        flex-wrap: wrap; }
+        .connect-s__wrap .title-connect .form label input, .connect-s__wrap .title-connect .form label textarea {
           background-color: #222222;
           border: 0;
           width: 300px;
           height: 30px;
           padding-left: 15px;
           color: #6a6969; }
-        .connect-s .title-connect .form label textarea {
+        .connect-s__wrap .title-connect .form label textarea {
           height: 100px; }
-      .connect-s .title-connect .form input[type='submit'] {
+      .connect-s__wrap .title-connect .form input[type='submit'] {
         background-color: #222222;
         border: 0;
         color: #6a6969;
         align-self: flex-end;
         height: 30px; }
-    .connect-s .title-connect .title-message {
-      width: 50%;
+    .connect-s__wrap .title-connect .title-message {
+      width: 430px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: start;
       flex-wrap: wrap; }
-      .connect-s .title-connect .title-message p {
+      @media only screen and (min-width: 768px) and (max-width: 1199px) {
+        .connect-s__wrap .title-connect .title-message {
+          width: 320px; } }
+      @media only screen and (max-width: 767px) {
+        .connect-s__wrap .title-connect .title-message {
+          width: 320px; } }
+      .connect-s__wrap .title-connect .title-message p {
         margin-bottom: 20px; }
-      .connect-s .title-connect .title-message ul {
+      .connect-s__wrap .title-connect .title-message ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;

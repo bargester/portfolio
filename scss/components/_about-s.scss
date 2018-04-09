@@ -13,16 +13,29 @@
   }
   .about-s__main{
     @include flex(row, start, center, nowrap);
+    @include res('tab'){
+      @include flex(row, start, center, wrap);
+    }
+    @include res('mob'){
+      @include flex(row, start, center, wrap);
+    }
     img{
       height: 300px;
       width: 250px;
       filter: grayscale(.5);
+      margin: 0 auto;
       }
     .about-s__main-title{
       @include flex(column, flex-start, center, nowrap);
       padding: 0 20px;
       max-width: 710px;
       width: 100%;
+      @include res('tab'){
+        margin: auto;
+      }
+      @include res('mob'){
+        margin: auto;
+      }
     }
   }
 }

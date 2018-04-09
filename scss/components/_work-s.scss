@@ -3,7 +3,15 @@
   .title-works{
     @include flex(row, space-between, start, wrap);
     a{
-      width: 48%;
+      width: 49%;
+      @include res('tab'){
+        width: 70%;
+        margin: 0 auto;
+      }
+      @include res('mob'){
+        width: 100%;
+        margin: 0 auto;
+      }
       .title-works_element {
         margin: 10px 0;
         height: 250px;

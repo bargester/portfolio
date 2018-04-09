@@ -7,7 +7,7 @@
   z-index: 10;
   &__wrap {
     background-color: $header-background-color;
-    @include flex(row, space-between, center, nowrap);
+    @include flex(row, space-between, center, wrap);
     h1 {
       width: 300px;
       height: 70px;

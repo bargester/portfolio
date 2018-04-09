@@ -1,15 +1,23 @@
-.connect-s {
-  margin-bottom: 200px;
+  .connect-s__wrap {
+  padding-bottom: 100px;
   .title-connect {
     @include flex(row, space-between, start, wrap);
     .form {
-      width: 50%;
+      width: 430px;
       padding-right: 50px;
       @include flex(column, space-between, start, wrap);
+      @include res('tab'){
+        width: 270px;
+        padding: 0;
+      }
+      @include res('mob'){
+        width: 270px;
+        padding: 0;
+      }
       label{
         margin-bottom: 10px;
         width: 100%;
-        @include flex(row, space-between, start, nowrap);
+        @include flex(row, space-between, start, wrap);
         input, textarea{
           background-color: $header-background-color;
           border: 0;
@@ -31,7 +39,13 @@
       }
     }
     .title-message {
-      width: 50%;
+      width: 430px;
+      @include res(tab){
+        width: 320px;
+      }
+      @include res('mob'){
+        width: 320px;
+      }
       @include flex(column, space-between, start, wrap);
       p{
         margin-bottom: 20px;
