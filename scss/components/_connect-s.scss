@@ -40,7 +40,7 @@
     }
     .title-message {
       width: 430px;
-      @include res(tab){
+      @include res('tab'){
         width: 320px;
       }
       @include res('mob'){
