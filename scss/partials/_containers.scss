@@ -4,4 +4,7 @@
   padding: 0 45px;
   margin: 0 auto;
   background-color: $main-background-color;
+  @include res('mob'){
+    padding: 0 10px;
+  }
 }

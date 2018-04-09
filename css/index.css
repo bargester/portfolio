@@ -317,6 +317,9 @@ input[type="submit"] {
   padding: 0 45px;
   margin: 0 auto;
   background-color: #262626; }
+  @media only screen and (max-width: 767px) {
+    .container {
+      padding: 0 10px; } }
 
 body {
   background: url("../img/body/background.jpg") fixed;
@@ -329,7 +332,7 @@ hr {
   margin: 15px 0; }
 
 h2 {
-  font-size: 60px;
+  font-size: 45px;
   font-family: "BreeSerif", sans-serif; }
 
 h3 {
@@ -508,11 +511,11 @@ p {
       flex-wrap: wrap; }
       @media only screen and (min-width: 768px) and (max-width: 1199px) {
         .connect-s__wrap .title-connect .form {
-          width: 270px;
+          width: 300px;
           padding: 0; } }
       @media only screen and (max-width: 767px) {
         .connect-s__wrap .title-connect .form {
-          width: 270px;
+          width: 300px;
           padding: 0; } }
       .connect-s__wrap .title-connect .form label {
         margin-bottom: 10px;
@@ -529,6 +532,10 @@ p {
           height: 30px;
           padding-left: 15px;
           color: #6a6969; }
+          @media only screen and (max-width: 767px) {
+            .connect-s__wrap .title-connect .form label input, .connect-s__wrap .title-connect .form label textarea {
+              width: 300px;
+              padding: 0; } }
         .connect-s__wrap .title-connect .form label textarea {
           height: 100px; }
       .connect-s__wrap .title-connect .form input[type='submit'] {
@@ -549,7 +556,7 @@ p {
           width: 320px; } }
       @media only screen and (max-width: 767px) {
         .connect-s__wrap .title-connect .title-message {
-          width: 320px; } }
+          width: 300px; } }
       .connect-s__wrap .title-connect .title-message p {
         margin-bottom: 20px; }
       .connect-s__wrap .title-connect .title-message ul {
